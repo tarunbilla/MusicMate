@@ -1136,7 +1136,16 @@ body {
   color: #d9eafd;
 }
 
-.container {
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+.main-container .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1226,13 +1235,4 @@ div > img {
   justify-content: center;
   font-size: 48px;
   font-weight: bold;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  /* overflow: hidden; */
 }
